@@ -24,6 +24,7 @@ python main.py --split train \
 ```shell
 ~/.vaik-utc101-video-classification-dataset$ tree
 .
+├── ucf101_labels.txt
 ├── train
 │   └── ApplyEyeMakeup
 │       ├── ApplyEyeMakeup_1007.mp4

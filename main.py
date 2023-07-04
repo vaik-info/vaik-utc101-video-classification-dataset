@@ -1,5 +1,6 @@
 import argparse
 import os
+import shutil
 import tqdm
 
 import imageio
@@ -33,6 +34,7 @@ def dump(split, classes_txt_path, image_height, image_width, fps, quality, max_c
         image_array_list = [np.clip(image.numpy(), 0.0, 255.0).astype(np.uint8) for image in video]
         imageio.mimwrite(os.path.join(output_sub_dir_path, f'{class_label}_{data_index}.mp4'), image_array_list,
                          fps=fps, quality=quality, codec='libx264')
+    shutil.copy2(classes_txt_path, os.path.join(output_dir_path, os.path.basename(classes_txt_path)))
 
 
 if __name__ == '__main__':
