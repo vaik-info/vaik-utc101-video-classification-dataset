@@ -47,7 +47,7 @@ if __name__ == '__main__':
     parser.add_argument('--image_height', type=int, default=224)
     parser.add_argument('--image_width', type=int, default=224)
     parser.add_argument('--fps', type=int, default=25)
-    parser.add_argument('--max_class_num', type=int, default=25)
+    parser.add_argument('--max_class_num', type=int, default=10)
     parser.add_argument('--output_dir_path', type=str, default='~/.vaik-utc101-video-classification-dataset')
 
     args = parser.parse_args()
