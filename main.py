@@ -38,7 +38,7 @@ def dump(split, classes_txt_path, sub_classes_txt_path, image_height, image_widt
         image_array_list = [np.clip(image.numpy(), 0.0, 255.0).astype(np.uint8) for image in video]
         imageio.mimwrite(os.path.join(output_sub_dir_path, f'{class_label}_{data_index}.avi'), image_array_list, fps=fps, codec='rawvideo')
 
-    with open(os.path.join(output_dir_path, os.path.basename(classes_txt_path)), 'w') as f:
+    with open(os.path.join(output_dir_path, os.path.basename(sub_classes_txt_path)), 'w') as f:
         for class_label in sub_classes:
             f.write(f'{class_label}\n')
 
