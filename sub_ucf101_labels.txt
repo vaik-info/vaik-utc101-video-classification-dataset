@@ -1,0 +1,10 @@
+ApplyEyeMakeup
+Biking
+CleanAndJerk
+FrisbeeCatch
+HorseRace
+LongJump
+PlayingDhol
+Punch
+Skiing
+TaiChi
