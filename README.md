@@ -14,7 +14,6 @@ python main.py --split train \
                 --image_height 224 \
                 --image_width 224 \
                 --fps 25 \
-                --max_class_num 25 \
                 --output_dir_path ~/.vaik-utc101-video-classification-dataset
 ```
 
