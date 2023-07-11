@@ -8,6 +8,7 @@ Parse and extract utc101 by tensorflow dataset
 ## Usage
 
 ```shell
+sudo apt-get install ffmpeg -y
 pip install -r requirements.txt
 python main.py --split train \
                 --classes_txt_path  ucf101_labels.txt\
